@@ -5,9 +5,9 @@ import shutil
 import pynq_dma
 
 def makefile():
-    srclib = "src/hardware/libpynq_dma.so"
+    srclib = "src/libpynq_dma.so"
     dstlib = "pynq_dma/pynq_dma.so"
-    #status = subprocess.check_call(["make", "-C", "src/hardware"])
+    status = subprocess.check_call(["make", "-C", "src"])
     if status is not 0:
         print("Error while running make..Exiting")
         sys.exit(1)
