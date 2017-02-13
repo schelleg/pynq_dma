@@ -1,6 +1,6 @@
 
 import cffi
-from pynq_dma import general_const
+
 from pynq import Bitstream,PL
 
 pynq_dma_overlay_fn = "pynq_dma.bit"
@@ -8,7 +8,7 @@ pynq_dma_overlay_fn = "pynq_dma.bit"
 class pynq_dma():
 
     def __init__(self):
-        self.bitfile = general_const.BITFILE
+        self.bitfile = pynq_dma_overlay_fn
         self.libfile = general_const.LIBRARY
         self.nshift_reg = 85
         ffi = cffi.FFI()
