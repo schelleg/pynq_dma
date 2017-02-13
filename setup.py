@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import subprocess
 import sys
 import shutil
-import pynqdma
+import pynq_dma
 
 def makefile():
     srclib = "src/hardware/libpynq_dma.so"
