@@ -18,7 +18,7 @@ if len(sys.argv) > 1 and sys.argv[1] == 'install':
 
 setup(
     name = "pynq_dma",
-    version = fir.__version__,
+    version = pynq_dma.__version__,
     url = 'https://github.com/schelleg/pynq_dma',
     license = 'BSD-3',
     author = "Graham Schelle",
