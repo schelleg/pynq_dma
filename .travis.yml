@@ -5,4 +5,5 @@ cache: pip
 install:
   - echo "no prework"
 script:
-  - pytest .
+  - pytest pynq_dma
+  
